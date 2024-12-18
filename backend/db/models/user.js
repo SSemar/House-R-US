@@ -16,14 +16,14 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          len: [2, 20], 
+          len: [2, 50], // First name length between 2 and 50 characters
         },
       },
       lastName: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          len: [2, 20], 
+          len: [2, 50], 
         },
       },
       username: {
